@@ -13,6 +13,14 @@ public class StudentService {
         return studentDao.getAll();
     }
 
+    public List<Student> searchListStudentByString(String attribute,String values) {
+        return studentDao.findByStringAttribute(attribute,values);
+    }
+
+    public List<Student> searchListStudentByNumber(String attribute,float values) {
+        return studentDao.findByFloatAttribute(attribute,values);
+    }
+
     public Student findID(int id) {
         return studentDao.findById(id);
     }

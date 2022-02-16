@@ -33,4 +33,13 @@ public class Student implements Serializable {
     @Column(name = "class_name", nullable = false)
     String className;
 
+    @Column(nullable = false)
+    String major;
+
+    @Column(nullable = false)
+    String gender;
+
+    @Column(name = "average_mark", nullable = false)
+    String averageMark ;
+
 }
